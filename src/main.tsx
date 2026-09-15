@@ -4,6 +4,7 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { AppProviders } from './app/AppProviders';
 import './index.css';
+import './styles/global.css';
 
 dayjs.locale('vi');
 
