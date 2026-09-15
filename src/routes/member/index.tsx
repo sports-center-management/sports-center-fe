@@ -1,6 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router';
-import { MemberDashboard } from '~/features/member-dashboard';
+import { MemberHome } from '~/features/member';
 
 export const Route = createFileRoute('/member/')({
-  component: MemberDashboard,
+  component: MemberHome,
 });

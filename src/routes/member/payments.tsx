@@ -1,10 +1,10 @@
 import { createFileRoute } from '@tanstack/react-router';
-import { RecentActivities } from '~/features/member-dashboard/components/RecentActivities';
+import { Page } from '~/features/member';
 
 export const Route = createFileRoute('/member/payments')({
   component: () => (
-    <div style={{ maxWidth: '800px' }}>
-      <RecentActivities />
-    </div>
+    <Page title="Lịch sử thanh toán">
+      <p className="m-0 text-sm text-sc-muted">Các hóa đơn đã thanh toán tại trung tâm.</p>
+    </Page>
   ),
 });

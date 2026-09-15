@@ -1,10 +1,10 @@
 import { createFileRoute } from '@tanstack/react-router';
-import { CurrentMembershipCard } from '~/features/member-dashboard/components/CurrentMembershipCard';
+import { Page } from '~/features/member';
 
 export const Route = createFileRoute('/member/my-membership')({
   component: () => (
-    <div style={{ maxWidth: '700px' }}>
-      <CurrentMembershipCard />
-    </div>
+    <Page title="Gói của tôi">
+      <p className="m-0 text-sm text-sc-muted">Thông tin gói thành viên hiện tại và lịch sử gia hạn.</p>
+    </Page>
   ),
 });
