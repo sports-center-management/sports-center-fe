@@ -1,7 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(cd \"E:/01_HocTap/SWP391/demo/frontend/src\" && cat pages/member/AiChat.tsx && echo ==== MISC && grep -n \"export\\\\|Check\\\\|QR\\\\|qrcode\" pages/member/Misc.tsx | head -30)"
-    ]
-  }
-}
