@@ -27,4 +27,6 @@ dist-ssr
 src/routeTree.gen.ts
 # TanStack Router plugin cache
 .tanstack/
+# Claude / AI settings
 .claude
+.claude/
