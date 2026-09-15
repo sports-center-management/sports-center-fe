@@ -11,7 +11,6 @@ interface Props {
   onClick?: () => void;
 }
 
-/** Card kiểu antd: viền mềm, bóng nhẹ, head 52px. */
 export function Card({ title, extra, children, className = '', bodyClassName = '', style, hoverable, onClick }: Props) {
   return (
     <div

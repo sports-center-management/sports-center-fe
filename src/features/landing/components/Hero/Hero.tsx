@@ -9,7 +9,6 @@ import './hero.css';
 import { HeroFacts } from './HeroFacts';
 import { usePinToBottom } from './usePinToBottom';
 
-/** Full-screen hero. Scroll-driven: image parallax, text fades, whole block scales down and dims. */
 export function Hero() {
   const ref = usePinToBottom();
 

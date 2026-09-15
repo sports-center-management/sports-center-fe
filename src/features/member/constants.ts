@@ -21,7 +21,6 @@ export type TagColor =
   | 'volcano'
   | 'pink';
 
-/** Nhãn + màu cho mọi mã trạng thái / vai trò / enum hiển thị dạng Tag. */
 export const STATUS_MAP: Record<string, { color: TagColor; label: string }> = {
   ACTIVE: { color: 'green', label: 'Đang hoạt động' },
   LOCKED: { color: 'red', label: 'Đã khóa' },

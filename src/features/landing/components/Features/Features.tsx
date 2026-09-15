@@ -6,10 +6,6 @@ import './features.css';
 import { FeatureStep } from './FeatureStep';
 import { FeatureVisual } from './visuals';
 
-/**
- * Scrollytelling: steps on the left scroll past a sticky panel on the right
- * that swaps its visual to match the active step. On mobile each step renders its visual inline.
- */
 export function Features() {
   const [activeIndex, setActiveIndex] = useState(0);
   const activeStep = FEATURE_STEPS[activeIndex];

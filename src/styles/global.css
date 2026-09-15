@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap');
 @import 'tailwindcss';
 
-/* Định nghĩa bảng màu & font chữ thương hiệu cho Tailwind v4 */
 @theme {
   --color-sc-primary: #0f4d34;
   --color-sc-primary-dark: #0b3b28;
@@ -21,7 +20,6 @@
   --font-body: 'Barlow', 'Inter', system-ui, sans-serif;
 }
 
-/* Alias --sc-* dùng bởi CSS thuần (landing, member-dashboard) — trỏ về theme ở trên. */
 :root {
   --sc-primary: var(--color-sc-primary);
   --sc-primary-dark: var(--color-sc-primary-dark);
@@ -76,7 +74,6 @@ a {
   background: transparent;
 }
 
-/* Motion dùng chung cho khu vực app (member/…): fade vào khi đổi trang, chấm gõ của trợ lý */
 @keyframes scFade {
   from {
     opacity: 0;
@@ -107,7 +104,6 @@ a {
   animation: scDot 1.2s infinite ease-in-out;
 }
 
-/* Sidebar: thanh cuộn mảnh, chỉ hiện khi hover */
 .sc-nav-scroll {
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;

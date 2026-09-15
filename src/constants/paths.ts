@@ -1,4 +1,3 @@
-// Route paths shared across the app
 export const PATHS = {
   home: '/',
   login: '/login',

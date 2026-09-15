@@ -4,7 +4,6 @@ import poolImg from '~/assets/images/sports/swim.jpg';
 import { MANIFESTO } from '../../data/content';
 import './manifesto.css';
 
-/** Paragraph whose words brighten one by one as the user scrolls through it. */
 export function Manifesto() {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start 0.85', 'end 0.45'] });

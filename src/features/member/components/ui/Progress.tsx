@@ -5,7 +5,6 @@ interface Props {
   className?: string;
 }
 
-/** Thanh tiến độ dạng line, cao 8px như antd Progress. */
 export function Progress({ percent, strokeColor = '#0f4d34', railColor = '#f0ede6', className = '' }: Props) {
   const p = Math.max(0, Math.min(100, percent));
   return (

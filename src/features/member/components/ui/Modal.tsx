@@ -18,7 +18,6 @@ interface Props {
   children: ReactNode;
 }
 
-/** Modal kiểu antd: mask tối, hộp trắng radius 12, footer 2 nút phải. Truyền footer={null} để ẩn footer. */
 export function Modal({
   open,
   title,

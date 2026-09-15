@@ -11,7 +11,6 @@ interface Msg {
   at: string;
 }
 
-/** Gợi ý theo chủ đề — hiện dạng thẻ ở màn hình chào, dạng chip khi đã có hội thoại. */
 const SUGGESTIONS: { topic: string; q: string }[] = [
   { topic: 'Lịch tập', q: 'Lịch tập tuần này của tôi?' },
   { topic: 'Gói thành viên', q: 'Gói của tôi còn bao lâu?' },
@@ -24,7 +23,6 @@ const SUGGESTIONS: { topic: string; q: string }[] = [
 const EYEBROW = 'block font-display text-xs font-bold uppercase tracking-[.12em] text-sc-muted';
 const CARD_SHADOW = 'shadow-[0_1px_2px_rgba(20,19,15,.03),0_2px_10px_rgba(20,19,15,.04)]';
 
-/** Câu trả lời dạng text: dòng đầu là câu dẫn, các dòng "• …" thành danh sách có kẻ trái. */
 function AnswerBody({ text }: { text: string }) {
   const lines = text.split('\n');
   const items = lines.filter((l) => l.startsWith('• ')).map((l) => l.slice(2));
@@ -63,7 +61,7 @@ export function AiChat() {
   useEffect(() => {
     bottom.current?.scrollIntoView({ behavior: 'smooth', block: 'end' });
   }, [msgs, typing]);
-  // autosize 1–5 dòng
+
   useEffect(() => {
     const el = ta.current;
     if (!el) return;
@@ -71,7 +69,6 @@ export function AiChat() {
     el.style.height = Math.min(el.scrollHeight, 5 * 24 + 12) + 'px';
   }, [input]);
 
-  // Ngữ cảnh trợ lý đang dùng — hiện ở cột phải để người dùng biết câu trả lời dựa trên gì
   const myClassIds = data.enrollments
     .filter((e) => e.memberId === me.id && e.status === 'ACTIVE')
     .map((e) => e.classId);
@@ -99,7 +96,6 @@ export function AiChat() {
     };
   })();
 
-  // Prototype: trả lời theo rule trên dữ liệu thật của member. Bản chính thức: gọi API từ backend với context này.
   const answer = (q: string): string => {
     const s = q.toLowerCase();
     if (s.includes('lịch')) {
@@ -175,7 +171,6 @@ export function AiChat() {
   return (
     <Page title="Trợ lý AI" subtitle="Hỏi về lịch tập, bài tập, gói thành viên hoặc dịch vụ của trung tâm" noCard>
       <div className="grid h-[calc(100vh-210px)] min-h-[520px] grid-cols-[minmax(0,1fr)_280px] gap-[18px] max-xl:h-auto max-xl:grid-cols-1">
-        {/* Khung hội thoại */}
         <div
           className={`flex min-w-0 flex-col overflow-hidden rounded-xl border border-sc-border-soft bg-white max-xl:h-[calc(100vh-210px)] max-xl:min-h-[520px] ${CARD_SHADOW}`}
         >
@@ -254,7 +249,6 @@ export function AiChat() {
             </div>
           </div>
 
-          {/* Ô nhập */}
           <div className="border-t border-sc-border-soft bg-white px-6 pt-3 pb-4 max-md:px-3.5">
             <div className="mx-auto max-w-[720px]">
               {!empty && (
@@ -299,7 +293,6 @@ export function AiChat() {
           </div>
         </div>
 
-        {/* Cột phải: trợ lý đang biết gì về bạn */}
         <aside
           className={`overflow-y-auto rounded-xl border border-sc-border-soft bg-white px-5 pt-5 pb-4 max-xl:hidden ${CARD_SHADOW}`}
         >

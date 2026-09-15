@@ -25,7 +25,7 @@ export function CheckIn() {
           <p className="mt-2 mb-4 text-[13.5px] text-sc-muted">
             Đưa mã QR vào thiết bị quét tại cổng vào để hoàn tất điểm danh.
           </p>
-          {/* Nội dung QR = mã thành viên; máy quét ở quầy đọc ra mã này */}
+
           <div className="inline-flex flex-col items-center rounded-xl border-2 border-dashed border-sc-primary bg-white p-4">
             <QRCodeSVG value={me.memberCode ?? me.id} size={168} level="M" fgColor="#14130f" />
             <div className="mt-3 font-display text-[22px] font-extrabold tracking-[.15em] text-sc-primary">

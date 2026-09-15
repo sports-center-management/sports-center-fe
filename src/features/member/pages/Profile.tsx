@@ -47,7 +47,6 @@ export function Profile() {
     >
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
         <Card className="overflow-hidden text-center" bodyClassName="p-0!">
-          {/* Profile cover */}
           <div className="relative h-[120px] overflow-hidden bg-[linear-gradient(135deg,#14130f_0%,#0f4d34_100%)] after:absolute after:-top-[60px] after:-right-10 after:h-[220px] after:w-[220px] after:rounded-full after:bg-[rgba(214,242,75,.14)] after:content-['']" />
           <div className="relative -mt-12 px-5 pb-5">
             <span className="inline-flex h-24 w-24 items-center justify-center rounded-full border-4 border-white bg-sc-lime text-[34px] font-bold text-sc-ink shadow-[0_6px_16px_rgba(15,23,42,.15)]">

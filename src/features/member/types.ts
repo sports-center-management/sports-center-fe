@@ -61,7 +61,7 @@ export interface GymClass {
 export interface Schedule {
   id: string;
   classId: string;
-  dayOfWeek: number; // 1 = Mon ... 7 = Sun
+  dayOfWeek: number;
   startTime: string;
   endTime: string;
 }

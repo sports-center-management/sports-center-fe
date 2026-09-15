@@ -28,7 +28,6 @@ export interface LandingSport {
   cardSize?: SportCardSize;
 }
 
-// TODO: replace with API data once the backend is ready (keep the LandingSport shape)
 export const SPORTS: LandingSport[] = [
   {
     id: 'gym',

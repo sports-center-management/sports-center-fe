@@ -4,13 +4,12 @@ import { initialsOf } from '../../store/MemberProvider';
 interface Props {
   name: string;
   size?: number;
-  color?: string; // màu chữ; nền = màu này pha 15%
+  color?: string;
   bg?: string;
   className?: string;
   style?: CSSProperties;
 }
 
-/** Avatar chữ cái đầu (2 chữ cuối của tên) như demo. */
 export function Avatar({ name, size = 32, color = '#7a776f', bg, className = '', style }: Props) {
   return (
     <span

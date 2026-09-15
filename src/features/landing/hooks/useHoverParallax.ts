@@ -3,7 +3,6 @@ import type { MouseEvent } from 'react';
 
 const SPRING = { stiffness: 120, damping: 18 };
 
-/** Shifts an element slightly toward the cursor on hover (parallax). */
 export function useHoverParallax(maxOffset = 10) {
   const x = useSpring(useMotionValue(0), SPRING);
   const y = useSpring(useMotionValue(0), SPRING);

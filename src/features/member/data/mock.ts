@@ -6,7 +6,6 @@ const dt = (offsetDays: number, h = 9) => dayjs().add(offsetDays, 'day').hour(h)
 
 export const CURRENT_USER_ID = 'u6';
 
-// 24 buổi điểm danh, 1 buổi vắng → chuyên cần 96%
 const attendances: AppData['attendances'] = Array.from({ length: 24 }, (_, i) => ({
   id: `at${i + 1}`,
   memberId: CURRENT_USER_ID,

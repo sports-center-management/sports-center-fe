@@ -60,7 +60,6 @@ export const memberNav: NavSection[] = [
   },
 ];
 
-/** 4 mục hiển thị trên thanh tab dưới cùng (mobile); mục thứ 5 là Menu. */
 export const memberMobileTabs: { key: string; label: string }[] = [
   { key: '/member', label: 'Trang chủ' },
   { key: '/member/classes', label: 'Lớp học' },
@@ -68,7 +67,6 @@ export const memberMobileTabs: { key: string; label: string }[] = [
   { key: '/member/court-booking', label: 'Đặt sân' },
 ];
 
-/** Danh sách phẳng (dùng cho breadcrumb, tìm kiếm). */
 export const flatNav = memberNav.flatMap((s) => s.items.map((i) => ({ ...i, section: s.title })));
 
 export const isNavActive = (key: string, pathname: string) =>

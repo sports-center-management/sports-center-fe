@@ -25,7 +25,6 @@ export function SideNav({ collapsed, onToggle, mobile, onNavigate }: Props) {
         mobile ? 'relative h-full w-full' : 'sticky top-0 z-20 h-screen'
       } ${collapsed ? 'w-[76px]' : 'w-[252px]'}`}
     >
-      {/* Brand */}
       <div
         className={`relative flex h-16 items-center gap-3 border-b border-white/6 ${collapsed ? 'px-5' : 'pr-4 pl-5'}`}
       >
@@ -52,7 +51,6 @@ export function SideNav({ collapsed, onToggle, mobile, onNavigate }: Props) {
         )}
       </div>
 
-      {/* Role chip */}
       {!collapsed && (
         <div className="mx-4 mt-3.5 mb-1 flex items-center gap-2 rounded-lg border border-white/7 bg-white/5 px-3 py-2 font-display text-[13px] font-bold uppercase tracking-[.06em] text-[#ece8df]">
           <span
@@ -66,7 +64,6 @@ export function SideNav({ collapsed, onToggle, mobile, onNavigate }: Props) {
         </div>
       )}
 
-      {/* Sections */}
       <nav className="sc-nav-scroll flex-1 overflow-y-auto px-3 pt-2 pb-3">
         {memberNav.map((sec, i) => (
           <div key={i} className="mt-2.5">
@@ -109,7 +106,6 @@ export function SideNav({ collapsed, onToggle, mobile, onNavigate }: Props) {
         ))}
       </nav>
 
-      {/* User */}
       <div
         onClick={() => {
           onNavigate?.();

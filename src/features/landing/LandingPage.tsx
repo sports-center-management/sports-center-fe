@@ -16,7 +16,6 @@ import { useDocumentTitle } from './hooks/useDocumentTitle';
 import { useSmoothScroll } from './hooks/useSmoothScroll';
 import './landing.css';
 
-/** Composes all landing sections in display order. */
 export function LandingPage() {
   useSmoothScroll();
   useDocumentTitle('Sports Center — Sân & phòng tập 10 bộ môn');

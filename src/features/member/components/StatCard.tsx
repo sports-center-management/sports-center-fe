@@ -5,7 +5,7 @@ interface Props {
   title: string;
   value: ReactNode;
   icon: ReactNode;
-  color?: string; // hex
+  color?: string;
   hint?: string;
   onClick?: () => void;
 }
@@ -16,7 +16,6 @@ const hexToRgba = (hex: string, a: number) => {
 };
 
 export function StatCard({ title, value, icon, color = '#0f4d34', hint, onClick }: Props) {
-  // Số tiền dài: cho phép co chữ theo bề rộng ô, không bao giờ cắt
   const fontSize =
     typeof value === 'string'
       ? value.length > 13

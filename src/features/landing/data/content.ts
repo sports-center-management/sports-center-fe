@@ -20,7 +20,7 @@ export const HERO = {
       desc: 'Sân thuê theo giờ, phòng tập theo lớp với HLV có chứng chỉ, hồ bơi',
     },
   ],
-  // Third fact; the month number is appended at render time
+
   promo: { titlePrefix: 'Ưu đãi tháng', desc: 'Mua gói All-access 1 năm tặng thêm 1 tháng và 2 buổi PT' },
 };
 

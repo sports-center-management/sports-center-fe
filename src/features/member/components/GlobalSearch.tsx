@@ -18,7 +18,6 @@ interface Hit {
 const ICON = { class: <BookOpen size={15} />, page: <Search size={15} />, invoice: <FileText size={15} /> };
 const LABEL = { class: 'Lớp học', page: 'Trang', invoice: 'Hóa đơn' };
 
-/** Chỉ mount phần thân khi mở để state (từ khóa, dòng chọn) tự reset mỗi lần. */
 export function GlobalSearch({ open, onClose }: { open: boolean; onClose: () => void }) {
   return (
     <Modal open={open} onCancel={onClose} footer={null} closable={false} width={640} top={80} bodyClassName="p-0!">

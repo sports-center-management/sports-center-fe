@@ -1,6 +1,5 @@
 import { useEffect, useState, type RefObject } from 'react';
 
-/** Distance (px) the horizontal track must travel to reveal all of its content. */
 export function useTrackDistance(trackRef: RefObject<HTMLElement | null>): number {
   const [distance, setDistance] = useState(0);
 

@@ -21,7 +21,6 @@ function useIsMobile() {
   return m;
 }
 
-/** Đóng popover khi click ra ngoài. */
 function useClickOutside<T extends HTMLElement>(open: boolean, onClose: () => void) {
   const ref = useRef<T>(null);
   useEffect(() => {
@@ -207,11 +206,10 @@ function Shell() {
     try {
       localStorage.setItem('sc_nav_collapsed', collapsed ? '1' : '0');
     } catch {
-      /* ignore */
+      // empty
     }
   }, [collapsed]);
 
-  // Thanh tab dưới cùng trên mobile: 4 mục đầu + nút Menu mở drawer
   const tabItems = memberMobileTabs.map((t) => ({ ...flatNav.find((i) => i.key === t.key)!, label: t.label }));
 
   return (

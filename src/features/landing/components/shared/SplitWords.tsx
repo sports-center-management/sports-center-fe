@@ -16,7 +16,6 @@ interface SplitWordsProps {
   emphasis?: string;
 }
 
-/** Heading that reveals word by word (each word slides up from behind a mask). */
 export function SplitWords({ text, className, delay = 0, as: Tag = 'h1', onView = false, emphasis }: SplitWordsProps) {
   const reduceMotion = useReducedMotion();
   const MotionTag = motion[Tag];
@@ -24,7 +23,7 @@ export function SplitWords({ text, className, delay = 0, as: Tag = 'h1', onView 
 
   const emphasisStart = emphasis ? text.indexOf(emphasis) : -1;
   const emphasisEnd = emphasisStart + (emphasis?.length ?? 0);
-  // Character offset of each word, used to detect words inside the `emphasis` substring
+
   const wordStarts = words.map((_, i) => words.slice(0, i).join(' ').length + (i > 0 ? 1 : 0));
 
   const trigger = onView ? { whileInView: 'show', viewport: { once: true, amount: 0.6 } } : { animate: 'show' };

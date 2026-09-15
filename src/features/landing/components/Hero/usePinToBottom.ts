@@ -1,10 +1,5 @@
 import { useEffect, useRef } from 'react';
 
-/**
- * The hero is sticky-pinned while the next section scrolls over it.
- * When the hero is taller than the viewport, pin its BOTTOM edge instead of the top
- * so the lower part stays reachable. Returns the ref to attach to the hero element.
- */
 export function usePinToBottom() {
   const heroRef = useRef<HTMLElement>(null);
 

@@ -58,7 +58,6 @@ function useCrumbs(title: string) {
   return items;
 }
 
-/** Khung trang: breadcrumb + tiêu đề display uppercase + nội dung (mặc định bọc trong Card). */
 export function Page({ title, subtitle, extra, children, noCard }: Props) {
   const crumbs = useCrumbs(title);
   return (

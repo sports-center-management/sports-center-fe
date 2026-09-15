@@ -1,7 +1,6 @@
 import type { ReactNode } from 'react';
 import { STATUS_MAP, type TagColor } from '../../constants';
 
-// Bảng màu preset của antd Tag (nền nhạt + chữ đậm), bỏ viền theo style demo.
 const COLORS: Record<TagColor, string> = {
   default: 'bg-[#f3f1ec] text-[#3d3b35]',
   green: 'bg-[#f6ffed] text-[#389e0d]',

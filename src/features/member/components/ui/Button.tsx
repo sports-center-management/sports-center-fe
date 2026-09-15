@@ -13,7 +13,6 @@ const VARIANT: Record<NonNullable<Props['variant']>, string> = {
   text: 'border border-transparent bg-transparent text-sc-ink hover:bg-[rgba(0,0,0,.06)]',
 };
 
-/** Nút kiểu antd: cao 38px, radius 8, chữ 600. */
 export function Button({
   variant = 'default',
   size = 'middle',

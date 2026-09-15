@@ -1,7 +1,6 @@
 import { Inbox } from 'lucide-react';
 import type { ReactNode } from 'react';
 
-/** Trạng thái rỗng kiểu antd Empty (simple). */
 export function Empty({
   description = 'Không có dữ liệu',
   className = '',
@@ -17,7 +16,6 @@ export function Empty({
   );
 }
 
-/** Bảng mô tả có viền (antd Descriptions bordered size=small, column=1). */
 export function Descriptions({ items }: { items: { label: ReactNode; children: ReactNode }[] }) {
   return (
     <div className="overflow-hidden rounded-lg border border-sc-border-soft">
@@ -37,7 +35,6 @@ export function Descriptions({ items }: { items: { label: ReactNode; children: R
   );
 }
 
-/** Nút chọn dạng segmented (antd Segmented). */
 export function Segmented<T extends string>({
   value,
   onChange,
@@ -75,7 +72,6 @@ export function Kbd({ children }: { children: ReactNode }) {
   );
 }
 
-/** Alert kiểu antd (warning / error) với nút hành động. */
 export function Alert({ type, title, action }: { type: 'warning' | 'error'; title: ReactNode; action?: ReactNode }) {
   const c =
     type === 'warning'

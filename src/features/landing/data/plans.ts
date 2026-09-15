@@ -9,7 +9,6 @@ export interface LandingPlan {
   popular?: boolean;
 }
 
-// TODO: replace with API data once the backend is ready
 export const FEATURED_PLANS: LandingPlan[] = [
   {
     id: 'gym-1m',

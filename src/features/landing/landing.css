@@ -1,4 +1,3 @@
-/* Landing page styles. Every class is prefixed .lp- to avoid clashing with app styles. */
 .lp {
   --paper: var(--sc-paper);
   --paper2: var(--sc-paper-2);

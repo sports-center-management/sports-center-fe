@@ -9,10 +9,6 @@ import { BenefitCard } from './BenefitCard';
 import './benefits.css';
 import { useTrackDistance } from './useTrackDistance';
 
-/**
- * Pinned horizontal scroll (desktop): vertical scroll progress is mapped to translateX of the track.
- * On tablet/mobile the CSS disables the pin and stacks cards vertically.
- */
 export function Benefits() {
   const sectionRef = useRef<HTMLElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);

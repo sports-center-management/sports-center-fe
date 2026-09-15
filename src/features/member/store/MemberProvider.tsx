@@ -1,4 +1,3 @@
-/* eslint-disable react-refresh/only-export-components */
 import dayjs from 'dayjs';
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
 import { CURRENT_USER_ID, initialData } from '../data/mock';
@@ -21,7 +20,6 @@ interface MemberContextValue {
 
 const MemberContext = createContext<MemberContextValue | null>(null);
 
-// Prototype: giữ dữ liệu giả lập trong sessionStorage để F5 không mất trạng thái khi demo.
 const DATA_KEY = 'sc_member_data_v1';
 const load = <T,>(key: string, fallback: T): T => {
   try {

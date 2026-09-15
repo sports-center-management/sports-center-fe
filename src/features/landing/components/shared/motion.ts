@@ -1,6 +1,5 @@
 import type { Variants } from 'motion/react';
 
-// easeOutQuint — shared easing for all landing animations
 export const EASE = [0.22, 1, 0.36, 1] as const;
 
 export const staggerContainer: Variants = {

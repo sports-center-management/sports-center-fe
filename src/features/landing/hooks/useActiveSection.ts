@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 
-/** Returns the "#id" of the section currently crossing the vertical center of the viewport. */
 export function useActiveSection(sectionIds: string[]): string {
   const [active, setActive] = useState('');
 
@@ -13,7 +12,7 @@ export function useActiveSection(sectionIds: string[]): string {
           if (entry.isIntersecting) setActive(`#${entry.target.id}`);
         });
       },
-      // Shrink the observed area to a thin band around the viewport center
+
       { rootMargin: '-45% 0px -50% 0px' },
     );
 

@@ -4,7 +4,6 @@ import type { InputHTMLAttributes, ReactNode, SelectHTMLAttributes, TextareaHTML
 const CONTROL =
   'w-full rounded-lg border border-sc-border bg-white px-3 text-sm text-sc-ink outline-none transition-all duration-150 placeholder:text-[#9a968c] hover:border-sc-primary focus:border-sc-primary focus:shadow-[0_0_0_3px_rgba(15,77,52,.12)]';
 
-/** Nhãn + ô nhập theo layout dọc của antd Form.Item. */
 export function Field({
   label,
   required,
